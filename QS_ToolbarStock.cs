@@ -16,8 +16,6 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>. 
 */
 
-using KSP.UI;
-using KSP.UI.Screens;
 using UnityEngine;
 
 namespace QuickSAS
@@ -128,11 +126,11 @@ namespace QuickSAS
 			}
 			if (appLauncherButton != null) {
 				if (SetTrue) {
-					if (appLauncherButton.toggleButton.CurrentState == KSP.UI.UIRadioButton.State.False) {
+					if (appLauncherButton.toggleButton.State == RUIToggleButton.ButtonState.FALSE) {
 						appLauncherButton.SetTrue (force);
 					}
 				} else {
-					if (appLauncherButton.toggleButton.CurrentState == KSP.UI.UIRadioButton.State.True) {
+					if (appLauncherButton.toggleButton.State == RUIToggleButton.ButtonState.TRUE) {
 						appLauncherButton.SetFalse (force);
 					}
 				}

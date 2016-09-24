@@ -47,7 +47,6 @@ namespace QuickSAS {
 
 		IEnumerator startSAS(VesselAutopilot.AutopilotMode autoPilot) {
 			if (TimeWarp.CurrentRate > 1 && TimeWarp.WarpMode == TimeWarp.Modes.HIGH) {
-				TimeWarp.fetch.CancelAutoWarp ();
 				TimeWarp.SetRate (0, false);
 			}
 			while (TimeWarp.CurrentRate > 1 && TimeWarp.WarpMode == TimeWarp.Modes.HIGH) {
