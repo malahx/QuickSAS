@@ -48,6 +48,10 @@ Delete the QuickSAS folder in your KSP/GameData folder.
 
 #### Changelog
 
+v1.01 - 2016.10.15
+* Fix: Corrected the stocktoolbar,
+* Compiled against KSP 1.2.0.1586
+
 v1.00 - 2016.09.24
 * First release
 

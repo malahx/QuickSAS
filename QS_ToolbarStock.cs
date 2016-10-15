@@ -32,7 +32,7 @@ namespace QuickSAS
 
 		private static bool CanUseIt {
 			get {
-				return HighLogic.LoadedSceneIsGame;
+				return HighLogic.LoadedScene == GameScenes.SPACECENTER;
 			}
 		}
 
